@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">SR App</string>
+    <string name="etiqueta_boton_uno">Ir a segunda Actividad</string>
+    <string name="etiqueta_boton_dos">Ir a tercera Actividad</string>
 </resources>
