@@ -4,39 +4,38 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import android.view.View
 import android.widget.Button
 
-class MainActivity : AppCompatActivity() {
-    //Declaracion de variables
-    lateinit var primerBoton:Button
-    lateinit var segundoBoton:Button
+class segundaActivity : AppCompatActivity() {
+
+    //Declaracion
+    lateinit var primer_boton:Button
+    lateinit var segundo_boton:Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-        Log.i("mi_app", "Estoy en metodo onCreate")
+        setContentView(R.layout.activity_segunda)
 
-        //Inicializacion de variables
+        //Inicializacion
+        primer_boton = findViewById(R.id.boton_1_segunda_act)
+        segundo_boton = findViewById(R.id.boton_2_segunda_act)
 
-        primerBoton = findViewById(R.id.primer_boton)
-        segundoBoton = findViewById(R.id.segundo_boton)
-
-        //Funcionalidad
-
-        primerBoton.setOnClickListener(View.OnClickListener {
+        //funcionalidad
+        primer_boton.setOnClickListener {
             Log.d("my_app", "Le diste clic al primer boton")
 
-            val miIntent = Intent(this, segundaActivity::class.java)
+            val miIntent = Intent(this, MainActivity::class.java)
             startActivity(miIntent)
-        })
 
-        segundoBoton.setOnClickListener(View.OnClickListener {
-            Log.d("my_app", "Le diste clic al primer boton")
+        }
+
+        segundo_boton.setOnClickListener {
+            Log.d("my_app", "Le diste clicl al primer boton")
 
             val miIntent = Intent(this, tercerActivity::class.java)
             startActivity(miIntent)
-        })
+
+        }
 
     }
 

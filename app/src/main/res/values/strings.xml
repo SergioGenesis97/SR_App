@@ -2,4 +2,8 @@
     <string name="app_name">SR App</string>
     <string name="etiqueta_boton_uno">Ir a segunda Actividad</string>
     <string name="etiqueta_boton_dos">Ir a tercera Actividad</string>
+    <string name="etiqueta_boton_1_segunda_act">Ir a primer Actividad</string>
+    <string name="titulo_primer_act">Primer Actividad</string>
+    <string name="titulo_seg_act">Segunda Actividad</string>
+    <string name="titulo_tercer_act">Tercer Actividad</string>
 </resources>
