@@ -1,6 +1,7 @@
 package mx.udg.alumnos.srapp
 
 import android.content.Intent
+import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -30,6 +31,9 @@ class tercerActivity : AppCompatActivity() {
         btn_decrementar = findViewById(R.id.btn_decrementar)
         tvContador = findViewById(R.id.tv_numero)
 
+        btn_incrementar.setBackgroundColor(Color.GREEN)
+
+        btn_decrementar.setBackgroundColor(Color.RED)
 
         //Funcionalidad
         primer_boton.setOnClickListener {
